@@ -28,10 +28,10 @@
 <h3>Aquí en tiempo real!<h3>
 		<label for="red_range" class="lbl" id="red_range_lbl">Rojo</label>
 		<input type="range" min="0" max="255" value="0" id="red_range" name="red_range" />
-		<label for="blue_range" class="lbl" id="blue_range_lbl">Azul</label>
-		<input type="range" min="0" max="255" value="0" id="blue_range" name="_range" />
 		<label for="green_range" class="lbl" id="green_range_lbl">Verde</label>
 		<input type="range" min="0" max="255" value="0" id="green_range" name="green_range" />
+		<label for="blue_range" class="lbl" id="blue_range_lbl">Azul</label>
+		<input type="range" min="0" max="255" value="0" id="blue_range" name="_range" />
 </body>
 <script type="text/javascript">
 	window.addEventListener('load', () => {
@@ -65,10 +65,17 @@
 		});
 	});
 
+	const updateInputs = (r, g, b) => {
+		red.value = r;
+		green.value = g;
+		blue.value = b;
+	}
+
 	const update = () => {
 		const red = red_range.value;	
 		const green = green_range.value;
 		const blue = blue_range.value;
+		updateInputs(red, green, blue);
 		performHttpRequest(red, green, blue);
 	}
 
