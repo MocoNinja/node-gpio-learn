@@ -1,0 +1,68 @@
+= Documentación con Asciidoctor: buena, bonita y barata
+:hardbreaks:
+// :toc: left
+:toc:
+:toc-title: Índice de contenidos
+//:sectnums: // Esto numera las secciones
+:source-highlighter: coderay
+
+== Preview básica
+
+*Esto* saldrá en negrita.
+_Esto_ lo hará en cursiva.
+Los subíndices van entre ~, como por ejemplo: H~2~O.
+Los superíndices, en cambio, van entre ^, como en E=mc^2^.
+Y si queremos comillas, las tenemos "`dobles`" y '`simples`'.
+Aunque "así" y 'así' también va bien, `así` no es lo mismo.
+Y si queremos que lo renderize tal cual pues \*usamos* una barra en el primero
+
+== Preview listas
+
+.Autores de literatura fantástica
+* Terry Pratchett
+* J.R.R. Tolkien
+* George R.R. Martin
+
+
+.Una lista con titulo
+- una lista de elementos 1
+- una lista de elementos 2
+* una sublista de elementos de 2
+* una sublista de elementos de 2
+
+.Desorden
+* 1
+- 2
+
+.Equivalente
+- 1
+* 2
+
+//Esto es un salto de línea
+// Se  puede poner a nivel global con :hardbreaks:
+// :hardbraks:
+
+[%hardbreaks] 
+
+* nivel 1
+** nivel 2
+* nivel 1
+*** nivel 2 (a pesar de los astericos)
+* nivel 1
+** nivel 2
+*** nivel 3
+**** nivel 4
+***** nivel 5
+* nivel 1
+
+.Esto es una lista ordenada
+. fijate en que usamos el punto
+. en lugar del guión
+
+.Y esto una lista etiquetada
+UNO:: El primer numero
+DOS:: El que va después
+MONO:: Qué pinta un mono
+en una lista
+etiquetada (fijate que la linea está separada
+en el fichero para mejorar su edición)

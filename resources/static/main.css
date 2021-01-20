@@ -1,0 +1,12 @@
+body {
+    margin: 3em 15em auto;
+    font-family: Arial, sans-serif;
+}
+
+.lbl {
+    cursor: pointer;
+}
+
+input[type=range] {
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RGB Remote Control</title>
+	<link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+	<h1>Bienvenido al nginx de la raspberrypi!</h1>
+	<h2>Vamos a controlar un led de forma chula!</h2>
+	<section>
+		<h3>Pon aquí las componentes RGB</h3>
+		<label for="red">Rojo</label>
+		<input type=number min=0 max=255 name="red" id="red" value=0 />
+		<label for="green">Verde</label>
+		<input type=number min=0 max=255 name="green" id="green" value=0 />
+		<label for="blue">Azul</label>
+		<input type=number min=0 max=255 name="blue" id="blue" value=0 />
+		<button id="pintar">Pintar!</button>
+		<hr />
+		<p id="hex">0x000</p>
+		<hr />
+		<h3>Aquí en tiempo real!<h3>
+				<label for="red_range" class="lbl" id="red_range_lbl">Rojo</label>
+				<input type="range" min="0" max="255" value="0" id="red_range" name="red_range" />
+				<label for="green_range" class="lbl" id="green_range_lbl">Verde</label>
+				<input type="range" min="0" max="255" value="0" id="green_range" name="green_range" />
+				<label for="blue_range" class="lbl" id="blue_range_lbl">Azul</label>
+				<input type="range" min="0" max="255" value="0" id="blue_range" name="_range" />
+	</section>
+	<hr />
+	<section>
+		<h3>Cámara!</h3>
+		<button id="img">Tomar foto</button>
+		<p id="text"></p>
+		<img />
+	</section>
+</body>
+<script defer type="text/javascript" src="./main.js"></script>
+
+</html>
